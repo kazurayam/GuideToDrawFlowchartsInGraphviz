@@ -1,0 +1,31 @@
+digraph G {
+    node [frontname = "Handlee"];
+    edge [frontname = "Handlee"];
+
+    draw [
+        label = "Draw a picture";
+        shape = rect;
+    ];
+    win [
+        label = "You win!";
+        shape = oval;
+    ];
+    guess [
+        label = "Dic they\nguess it?";
+        shape = diamond;
+    ];
+    point [
+        label = "Point repeatedly\nto the same picture.";
+        shape = rect;
+    ];
+
+    draw -> guess;
+    win -> guess [ label = "Yes"; dir=back ];
+    point -> guess;
+    guess -> point [ label = "No"];
+
+    {
+        rank=same;
+        guess; point; win;
+    }
+}
