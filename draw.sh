@@ -4,5 +4,6 @@
 
 #dot -Tpng 3_winners_to_the_left_please.dot -o tmp/3_winners_to_the_left_please.png
 
-dot -Tpng 4_no_breathing_room.dot -o tmp/4_no_breathing_room.png
+#dot -Tpng 4_no_breathing_room.dot -o tmp/4_no_breathing_room.png
 
+dot -Tpng 5_squaring_things_up.dot -o tmp/5_squaring_things_up.png
